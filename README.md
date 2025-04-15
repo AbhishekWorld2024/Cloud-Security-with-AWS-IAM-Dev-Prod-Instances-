@@ -22,14 +22,43 @@ secure-cloud-infra-aws-iam/<br>
     └── s3-policy-setup.md  <br>  <br>   
 
  
- Core AWS Services Used<br>
-Component	Description<br>
-EC2 (Dev)	Represents a developer’s machine (t2.micro) with IAM role to upload to Dev bucket<br>
-EC2 (Prod)	Represents a production instance with read-only access to Prod bucket<br>
-S3 (Dev Bucket)	For test files/logs from developers<br>
-S3 (Prod Bucket)	For real app data – strictly protected<br>
-IAM Roles	Fine-grained access policies scoped to EC2<br>
-S3 Bucket Policies	Reinforce security by checking who is allowed or denied<br><br>
+ <h2>🧰 Core AWS Services Used</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EC2 (Dev)</td>
+      <td>Represents a developer’s machine (<code>t2.micro</code>) with IAM role to upload to Dev bucket</td>
+    </tr>
+    <tr>
+      <td>EC2 (Prod)</td>
+      <td>Represents a production instance with read-only access to Prod bucket</td>
+    </tr>
+    <tr>
+      <td>S3 (Dev Bucket)</td>
+      <td>For test files/logs from developers</td>
+    </tr>
+    <tr>
+      <td>S3 (Prod Bucket)</td>
+      <td>For real app data – strictly protected</td>
+    </tr>
+    <tr>
+      <td>IAM Roles</td>
+      <td>Fine-grained access policies scoped to EC2</td>
+    </tr>
+    <tr>
+      <td>S3 Bucket Policies</td>
+      <td>Reinforce security by checking who is allowed or denied</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 <h2>🔍 Real-World Security Goals</h2>
