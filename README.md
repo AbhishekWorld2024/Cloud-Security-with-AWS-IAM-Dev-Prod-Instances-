@@ -2,10 +2,10 @@
 
 secure-cloud-infra-aws-iam/<br>
 │
-├── README.md       <br>               ← Full documentation
+├── README.md       <br>               
 ├── architecture/<br>
-│   ├── diagram.png  <br>              ← Visual representation of the architecture
-│   └── design-decisions.md <br> <br>     ← Notes about choices made
+│   ├── diagram.png  <br>              
+│   └── design-decisions.md <br> <br>     
 │
 ├── iam-policies/<br>
 │   ├── dev-ec2-role-policy.json<br>
@@ -14,12 +14,12 @@ secure-cloud-infra-aws-iam/<br>
 │   └── prod-bucket-policy.json<br><br>
 │
 ├── scripts/<br>
-│   ├── dev-upload-test.sh  <br>      ← Sample command to test upload from Dev EC2
-│   └── prod-read-test.sh    <br>     ← Sample read test from Prod EC2
+│   ├── dev-upload-test.sh  <br>      
+│   └── prod-read-test.sh    <br>     
 │
 └── setup-guide/<br>
-    ├── ec2-role-attach.md <br>       ← Steps to attach IAM roles to EC2
-    └── s3-policy-setup.md  <br>  <br>    ← Guide to apply bucket policies
+    ├── ec2-role-attach.md <br>      
+    └── s3-policy-setup.md  <br>  <br>   
 
  
  Core AWS Services Used<br>
