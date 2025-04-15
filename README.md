@@ -32,11 +32,40 @@ IAM Roles	Fine-grained access policies scoped to EC2<br>
 S3 Bucket Policies	Reinforce security by checking who is allowed or denied<br><br>
 
 
-Real-World Security Goals<br>
-Security Scenario	Outcome<br>
-Dev EC2 uploads to dev bucket<br>	✅ Allowed
-Dev EC2 tries accessing prod bucket	<br>❌ Denied
-Prod EC2 reads from prod bucket<br>	✅ Allowed
-Prod EC2 uploads or deletes files<br>	❌ Denied
-No hardcoded AWS credentials<br>	✅ IAM roles used
-External access blocked unless authorized<br>	✅ Bucket policy enforced
+<h2>🔍 Real-World Security Goals</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Security Scenario</th>
+      <th>Outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dev EC2 uploads to dev bucket</td>
+      <td>✅ Allowed</td>
+    </tr>
+    <tr>
+      <td>Dev EC2 tries accessing prod bucket</td>
+      <td>❌ Denied</td>
+    </tr>
+    <tr>
+      <td>Prod EC2 reads from prod bucket</td>
+      <td>✅ Allowed</td>
+    </tr>
+    <tr>
+      <td>Prod EC2 uploads or deletes files</td>
+      <td>❌ Denied</td>
+    </tr>
+    <tr>
+      <td>No hardcoded AWS credentials</td>
+      <td>✅ IAM roles used</td>
+    </tr>
+    <tr>
+      <td>External access blocked unless authorized</td>
+      <td>✅ Bucket policy enforced</td>
+    </tr>
+  </tbody>
+</table>
+
