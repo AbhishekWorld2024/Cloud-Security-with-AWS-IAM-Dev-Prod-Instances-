@@ -1,12 +1,32 @@
 # Cloud-Security-with-AWS-IAM-Dev-Prod-Instances-
 
-<h3>Highlights</h3>
-Designed and implemented secure multi-environment infrastructure in AWS<br>
-Enforced IAM-based least privilege access for EC2 to S3 buckets<br>
-Prevented lateral access between Dev and Prod environments<br>
-Applied S3 bucket policies for defense-in-depth security<br>
-Ensured zero use of static credentials (IAM roles only)<br>
-Free-tier eligible (t2.micro + S3 < 5GB)<br><br>
+<h2>Secure Multi-Environment AWS Infrastructure</h2>
+
+<p>
+Designed and implemented a secure, multi-environment infrastructure on AWS that strictly separates development and production workloads. The architecture includes two Amazon EC2 instances—one for development and another for production—each configured with fine-grained IAM roles and tailored S3 access policies to uphold the principles of least privilege and defense-in-depth.
+</p>
+
+<h3>✅ Key Highlights:</h3>
+
+<ul>
+  <li>
+    <strong>🔐 IAM-Based Access Control:</strong> Assigned tightly scoped IAM roles to each EC2 instance, ensuring that developers have the necessary permissions to upload and test files in the Dev S3 bucket, while the production instance operates with read-only or zero access, depending on the environment.
+  </li>
+  <li>
+    <strong>🪪 S3 Bucket Policies:</strong> Applied custom S3 bucket policies to reinforce security at the bucket level, explicitly denying access from production to Dev buckets and vice versa, preventing any unintended lateral movement between environments.
+  </li>
+  <li>
+    <strong>🚫 No Static Credentials:</strong> Ensured zero use of hardcoded or static AWS credentials by leveraging IAM roles attached directly to EC2 instances for secure, temporary access.
+  </li>
+  <li>
+    <strong>🧱 Environment Isolation:</strong> Established a strong boundary between Dev and Prod by restricting S3 access only to what is necessary per role, preventing any data leakage or unauthorized access.
+  </li>
+</ul>
+
+<p>
+This project demonstrates a security-first approach to cloud infrastructure design, with an emphasis on environment segregation, role-based access control, and AWS-native security features.
+</p>
+
 secure-cloud-infra-aws-iam/<br>
 │
 ├── README.md       <br>               
