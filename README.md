@@ -2,15 +2,10 @@
 
 <h3>Highlights</h3>
 Designed and implemented secure multi-environment infrastructure in AWS<br>
-
 Enforced IAM-based least privilege access for EC2 to S3 buckets<br>
-
 Prevented lateral access between Dev and Prod environments<br>
-
 Applied S3 bucket policies for defense-in-depth security<br>
-
 Ensured zero use of static credentials (IAM roles only)<br>
-
 Free-tier eligible (t2.micro + S3 < 5GB)<br><br>
 secure-cloud-infra-aws-iam/<br>
 │
