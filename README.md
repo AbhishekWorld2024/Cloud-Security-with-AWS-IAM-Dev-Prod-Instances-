@@ -30,3 +30,13 @@ S3 (Dev Bucket)	For test files/logs from developers<br>
 S3 (Prod Bucket)	For real app data – strictly protected<br>
 IAM Roles	Fine-grained access policies scoped to EC2<br>
 S3 Bucket Policies	Reinforce security by checking who is allowed or denied<br><br>
+
+
+Real-World Security Goals<br>
+Security Scenario	Outcome<br>
+Dev EC2 uploads to dev bucket<br>	✅ Allowed
+Dev EC2 tries accessing prod bucket	<br>❌ Denied
+Prod EC2 reads from prod bucket<br>	✅ Allowed
+Prod EC2 uploads or deletes files<br>	❌ Denied
+No hardcoded AWS credentials<br>	✅ IAM roles used
+External access blocked unless authorized<br>	✅ Bucket policy enforced
