@@ -49,8 +49,7 @@ secure-cloud-infra-aws-iam/<br>
     └── s3-policy-setup.md  <br>  <br>   
 
  
- <h2>🧰 Core AWS Services Used</h2>
-
+ <h2>🧰 Core AWS Services Used</h2> 
 <table>
   <thead>
     <tr>
